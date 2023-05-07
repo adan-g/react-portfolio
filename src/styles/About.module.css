@@ -1,0 +1,54 @@
+.container {
+  padding: 4rem 0 4rem 0;
+  height: 100vh;
+}
+
+.titleAbout {
+  padding-bottom: 50px;
+  font-size: 2.5rem;
+  color: #146C94;
+  font-weight: 900;
+  text-align: center;
+}
+
+.divAbout {
+  display: flex;
+  justify-content: center;
+}
+
+.divImg {
+  width: 30%;
+  padding-right: 15px;
+}
+
+.imgLaptop {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.divText {
+  width: 40%;
+  line-height: 1.5;
+}
+
+.divText h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+@media screen and (max-width:680px) {
+  .container{
+    padding: 0 15px 0 15px;
+  }
+  .divAbout {
+    flex-direction: column;
+  }
+
+  .divImg{
+    width: 100%;
+  }
+  .divText{
+    width: 100%;
+  }
+}

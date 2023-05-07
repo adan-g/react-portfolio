@@ -1,0 +1,82 @@
+.Header {
+	width: 100%;
+	padding: 1em 0 1em 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000000;
+	color: #F6F1F1;
+	position: fixed;
+	z-index: 1000;
+}
+
+.HeaderName{
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.HeaderSvg{
+	width: 2em;
+	height: 2em;
+	fill: #F6F1F1;
+}
+
+.HeaderButton{
+	display: none;
+	background: transparent;
+	border: none;
+}
+
+.HeaderUl{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.HeaderLi{
+	margin: 0 .5em;
+	
+}
+
+.HeaderA{
+	text-decoration: none;
+	color: #F6F1F1;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.HeaderA:hover{
+	color: #19A7CE;
+}
+
+@media screen and (max-width:680px) {
+	.HeaderButton{
+		display: flex;
+		cursor: pointer;
+	}
+
+	.HeaderNav{
+		width: 100%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		height: 0vh;
+		opacity: 0;
+		overflow: hidden;
+		transition: all .5s ease;
+	}
+	.HeaderNav.isActive{
+		height: 50vh;
+		opacity: 1;
+	}
+	.HeaderUl{
+		flex-direction: column;
+	}
+	.HeaderLi{
+		margin: .5em 0;
+	}
+}

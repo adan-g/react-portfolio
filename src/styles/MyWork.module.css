@@ -1,0 +1,67 @@
+.container {
+  padding: 4rem 0 4rem 0;
+  height: 100vh;
+}
+
+.titleMyWork {
+  padding-bottom: 50px;
+  font-size: 2.5rem;
+  color: #146C94;
+  font-weight: 900;
+  text-align: center;
+}
+
+.containerImgPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divImgText {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  margin: 0 5px 0 5px;
+  flex: 0 0 30%;
+}
+
+.divImgPortfolio {
+  height: 280px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.imgPortfolio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.divText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+.divText p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.divText a {
+  text-decoration: none;
+  border: 3px solid #19A7CE;
+  padding: 5px 0 5px 0;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.divText a:hover{
+  background-color: #19A7CE;
+  transition: 0.3s;
+  color: white;
+}
