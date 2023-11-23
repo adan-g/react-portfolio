@@ -1,48 +1,62 @@
-import styles from '../styles/Skills.module.css';
-import imgReact from '../img/imgReact.png'
-import imgNode from '../img/imgNode.png'
-import imgPhp from '../img/imgPhp.png';
-import imgHtml from '../img/imgHtml.png'
-import imgCss from '../img/imgCss.png'
-import imgMysql from '../img/imgMysql.png'
-import imgGit from '../img/imgGit.png'
-import imgJs from '../img/imgJs.png'
+import { RiReactjsLine, RiCss3Fill, RiJavascriptLine, RiHtml5Line } from "react-icons/ri"
+import { LiaPython } from "react-icons/lia";
+import { SiPhp } from "react-icons/si";
+import { ImGit } from "react-icons/im";
+import { HiDatabase } from "react-icons/hi";
+import { Tooltip } from 'react-tooltip'
+
 
 const Skills = () => {
   return (
-    <div className={styles.container} id={'skills'}>
-      <h1 className={styles.titleSkills}>
+    <section className=''>
+      <h1 className='text-[10rem] text-center text-black12 font-semibold my-24' style={{ '-webkit-text-stroke-width': '2px', '-webkit-text-stroke-color': '#93B1A6', 'text-shadow': '#93B1A6 1px 0 20px' }}>
         SKILLS
       </h1>
 
-      <div className={styles.containerImgSkills}>
-        <div className={styles.divImgSkills}>
-          <img src={imgReact} alt='img React' className={styles.imgSkills} />
+      <div className='grid grid-cols-1 gap-20'>
+        <Tooltip id="mytooltip" />
+        <div data-aos="fade-left" className="flex">
+          <RiReactjsLine
+            data-tooltip-id="mytooltip" data-tooltip-content="React Js"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
+
+          <RiJavascriptLine
+            data-tooltip-id="mytooltip" data-tooltip-content="JavaScript"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
+          <LiaPython
+            data-tooltip-id="mytooltip" data-tooltip-content="Python"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
+          <SiPhp
+            data-tooltip-id="mytooltip" data-tooltip-content="PHP"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
         </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgNode} alt='img Node' className={styles.imgSkills} />
-        </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgPhp} alt='img Php' className={styles.imgSkills} />
-        </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgJs} alt='img Js' className={styles.imgSkills} />
-        </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgHtml} alt='img Html' className={styles.imgSkills} />
-        </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgCss} alt='img Css' className={styles.imgSkills} />
-        </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgMysql} alt='img Mysql' className={styles.imgSkills} />
-        </div>
-        <div className={styles.divImgSkills}>
-          <img src={imgGit} alt='img Git' className={styles.imgSkills} />
+
+        <div data-aos="fade-right" className="flex">
+          <RiHtml5Line
+            data-tooltip-id="mytooltip" data-tooltip-content="HTML 5"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
+          <RiCss3Fill
+            data-tooltip-id="mytooltip" data-tooltip-content="CSS 3"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
+          <ImGit
+            data-tooltip-id="mytooltip" data-tooltip-content="Git & Github"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
+          <HiDatabase
+            data-tooltip-id="mytooltip" data-tooltip-content="Mysql, MongoDB"
+            className='text-black12 w-full h-52 stroke-greenA6 stroke-[0.5px] drop-shadow-[0_0_3px_#93B1A6] hover:stroke-[1px] duration-1000 cursor-pointer'
+          />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
+
 
 export default Skills

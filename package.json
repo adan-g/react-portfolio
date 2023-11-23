@@ -12,17 +12,25 @@
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.11.1",
     "react-scroll": "^1.8.9",
-    "sweetalert2": "^11.7.5",
-    "typewriter-effect": "^2.19.0"
+    "react-tooltip": "^5.23.0",
+    "react-typed": "^1.2.0",
+    "rsuite": "^5.44.0",
+    "sweetalert2": "^11.6.13",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "vite": "^4.1.0"
   }
 }

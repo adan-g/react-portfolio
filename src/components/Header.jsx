@@ -1,36 +1,22 @@
-import { useState } from 'react'
-import styles from '../styles/Header.module.css'
-import { Link, animateScroll as scroll } from 'react-scroll';
+import React, {useState} from "react";
+import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 
 const Header = () => {
-
-  const [menu, setMenu] = useState(false)
-
-  const toggleMenu = () => {
-    setMenu(!menu)
-  }
+  const [showMenu, setShowMenu] = useState(false)
   return (
-    <header className={styles.Header}>
-      <div className={styles.HeaderName}>
-        {`< Hello World />`}
-      </div>
-
-      <button
-        onClick={toggleMenu}
-        className={styles.HeaderButton}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className={styles.HeaderSvg} viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
-      </button>
-
-      <nav className={`${styles.HeaderNav} ${menu ? styles.isActive : ''}`}>
-        <ul className={styles.HeaderUl}>
-          <li className={styles.HeaderLi}><Link to={'about'} smooth={true} className={styles.HeaderA}>About me</Link></li>
-          <li className={styles.HeaderLi}><Link to={'skills'} smooth={true} className={styles.HeaderA}>Skills</Link></li>
-          <li className={styles.HeaderLi}><Link to={'myWork'} smooth={true} className={styles.HeaderA}>My work </Link></li>
-          <li className={styles.HeaderLi}><Link to={'contact'} smooth={true} className={styles.HeaderA}>Contact </Link></li>
-        </ul>
+    <header className='flex lg:justify-center justify-end mt-4 lg:h-[10vh] z-50'>
+      <nav className={`fixed w-[80%] h-full ${
+        showMenu ? 'left-0' : '-left-full'
+      } 
+        top-0 flex-col bg-black12 text-greenA6 lg:static lg:w-1/2 flex lg:flex-row lg:h-12 lg:justify-evenly justify-center items-center xl:rounded-full gap-10 border-greenA6 border shadow-md shadow-greenA6 transition-all duration-500 z-50`}>
+        <a href="#" className="hover:underline hover:text-green-50 duration-1000">About</a>
+        <a href="#" className="hover:underline hover:text-green-50 duration-1000">Skills</a>
+        <a href="#" className="hover:underline hover:text-green-50 duration-1000">Work</a>
+        <a href="#" className="hover:underline hover:text-green-50 duration-1000">Contact</a>
       </nav>
+      <button onClick={() => setShowMenu(!showMenu)} className="text-2xl p-2 bg-black12 text-greenA6 border-greenA6 border shadow-md shadow-greenA6 lg:hidden">
+        {showMenu ? <RiCloseLine/> : <RiMenuLine/>}
+      </button>
     </header>
   )
 }

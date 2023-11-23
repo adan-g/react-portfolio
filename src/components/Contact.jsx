@@ -1,48 +1,22 @@
-import styles from '../styles/Contact.module.css'
-import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
-import Swal from 'sweetalert2';
+import { RiLinkedinBoxFill } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
 
 const Contact = () => {
-  const refForm = useRef();
-  const handlesubmit = (event) => {
-    event.preventDefault();
-
-    const seviceId = import.meta.env.VITE_SERVICEID;
-    const templateId = import.meta.env.VITE_TEMPLATEID;
-    const apikey = import.meta.env.VITE_APIKEY;
-
-    emailjs.sendForm(seviceId, templateId, refForm.current, apikey)
-      .then(result => {
-        if (result.text == 'OK') {
-          Swal.fire('Message sent', '', 'success');
-        }
-      })
-      .catch(error => console.error(error))
-  }
-
   return (
-    <div className={styles.container} id={'contact'}>
-      <h1 className={styles.titleContact}>Contact</h1>
+    <section className='mx-7'>
+      <h1 className='text-[10rem] text-center text-black12 font-semibold my-24' style={{ '-webkit-text-stroke-width': '2px', '-webkit-text-stroke-color': '#93B1A6', 'text-shadow': '#93B1A6 1px 0 20px' }}>
+        CONTACT
+      </h1>
 
-      <form ref={refForm} action='' onSubmit={handlesubmit} className={styles.form}>
-        <div>
-          <p>Your Name</p>
-          <input type='text' name='name' required />
-        </div>
-        <div>
-          <p>Your Email</p>
-          <input type='email' name='email' required />
-        </div>
-
-        <div>
-          <p>Your message</p>
-          <textarea name='message' required></textarea>
-        </div>
-
-        <button type='submit' className={styles.inputSend}>Send</button>
-      </form>
-    </div>
+      <nav className="flex justify-center space-x-12">
+        <a href="#" className="bg-greenA6 p-2 text-6xl rounded-md">
+          <RiLinkedinBoxFill />
+        </a>
+        <a href="#" className="bg-greenA6 p-2 text-6xl rounded-md">
+          <RiInstagramFill />
+        </a>
+      </nav>
+    </section>
   )
 }
 

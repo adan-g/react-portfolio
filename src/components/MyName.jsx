@@ -1,5 +1,5 @@
 import Typewriter from 'typewriter-effect';
-import imgAdan from '../img/imgAdan.jpeg'
+import imgAdan from '../img/imgAdan.jpg'
 import style from '../styles/MyName.module.css'
 
 const MyName = () => {
@@ -13,7 +13,7 @@ const MyName = () => {
 
         <div className={style.divName}>
           
-            <p className=''>Hi,</p> 
+            <p className={style.pHi}>Hi,</p> 
             <p className={style.pName}>I'm Adan Gimenez</p>
           
 

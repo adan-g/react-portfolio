@@ -6,7 +6,7 @@
 .titleAbout {
   padding-bottom: 50px;
   font-size: 2.5rem;
-  color: #146C94;
+  color: white;
   font-weight: 900;
   text-align: center;
 }
@@ -30,6 +30,7 @@
 .divText {
   width: 40%;
   line-height: 1.5;
+  color: #E6EDF3;
 }
 
 .divText h2 {

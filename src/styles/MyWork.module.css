@@ -6,7 +6,7 @@
 .titleMyWork {
   padding-bottom: 50px;
   font-size: 2.5rem;
-  color: #146C94;
+  color: #E6EDF3;
   font-weight: 900;
   text-align: center;
 }
@@ -19,8 +19,8 @@
 
 .divImgText {
   margin-bottom: 30px;
-  border: 1px solid black;
-  margin: 0 5px 0 5px;
+  border: 1px solid white;
+  margin: 0 1% 0 1%;
   flex: 0 0 30%;
 }
 
@@ -43,11 +43,12 @@
   flex-direction: column;
   align-items: center;
   padding: 0 15px 0 15px;
+  color: #E6EDF3;
+  background-color: #222731;
 }
 
 .divText p {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin: 20px 0 20px 0;
 }
 
 .divText a {
@@ -57,7 +58,7 @@
   border-radius: 10px;
   width: 100%;
   margin-bottom: 10px;
-  color: black;
+  color: #E6EDF3;
 }
 
 .divText a:hover{

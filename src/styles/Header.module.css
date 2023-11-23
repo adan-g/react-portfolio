@@ -5,7 +5,7 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #000000;
+	background-color: #212D40;
 	color: #F6F1F1;
 	position: fixed;
 	z-index: 1000;
@@ -79,4 +79,8 @@
 	.HeaderLi{
 		margin: .5em 0;
 	}
+}
+
+.test{
+	background: linear-gradient(90deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0.461139) 59.76%, rgba(1, 1, 1, 0) 100%);
 }
