@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { RiCloseLine, RiExpandUpDownFill, RiSubtractLine } from "react-icons/ri";
 import imgFace from '../img/imgAdan.jpg'
-import Typed from 'react-typed';
 
 const MyWork = () => {
   return (

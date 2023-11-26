@@ -19,7 +19,6 @@
     "react-router-dom": "^6.11.1",
     "react-scroll": "^1.8.9",
     "react-tooltip": "^5.23.0",
-    "react-typed": "^1.2.0",
     "rsuite": "^5.44.0",
     "sweetalert2": "^11.6.13",
     "typewriter-effect": "^2.21.0"

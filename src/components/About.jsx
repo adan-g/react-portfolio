@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { RiCloseLine, RiExpandUpDownFill, RiSubtractLine } from "react-icons/ri";
 import imgFace from '../img/imgAdan.jpg'
-import Typed from 'react-typed';
 
 const About = () => {
   return (
@@ -23,11 +22,9 @@ const About = () => {
 
           <p className='px-2'>
             <p>/Users/adangimenez/:</p>
-            <Typed
-              strings={[`I consider myself a ppasionate person about tecnology i think we can do great things with it and to improve our environment if we put it to good use. I like to support new ideas because i know they can have a great result, i'm the kind of person that when i do something i try to do my best. It's been a little over 7 years that I've been programmed, Currently I do almost all my projects with javascript and some of its framework: NodeJs, ReactJs.
-              <p>I had my first interaction with programming in high school with the programming language "Basic" with this language we are simulating the function of an ATM, a few months later we saw several classes with Visual Basic 6.0 with this we were programming a simple game. In my first job related to the world of computing and programming, I had the opportunity to learn Visual Basic .NET and database management, some time later I was working with the PHP language, delving deeper into the web world.</p>`]}
-              typeSpeed={1}
-            />
+            <p>I consider myself a ppasionate person about tecnology i think we can do great things with it and to improve our environment if we put it to good use. I like to support new ideas because i know they can have a great result, i'm the kind of person that when i do something i try to do my best. It's been a little over 7 years that I've been programmed, Currently I do almost all my projects with javascript and some of its framework: NodeJs, ReactJs.
+              <p>I had my first interaction with programming in high school with the programming language "Basic" with this language we are simulating the function of an ATM, a few months later we saw several classes with Visual Basic 6.0 with this we were programming a simple game. In my first job related to the world of computing and programming, I had the opportunity to learn Visual Basic .NET and database management, some time later I was working with the PHP language, delving deeper into the web world.</p>
+            </p>
           </p>
         </div>
       </div>
