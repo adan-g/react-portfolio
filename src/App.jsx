@@ -8,22 +8,17 @@ import Footer from "./components/Footer"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-
 Aos.init();
 
 function App() {
   return (
     <div>
         <Header />
-        <About />
-        <Skills />
-        <MyWork />
-        <Contact />
+        <About title='mywork' id='about' />
+        <Skills title='skills' id='skills' />
+        <MyWork title='mywork' id='mywork' />
+        <Contact title='mywork' id='contact' />
         <Footer />
-        {/*<MyName />
-        <MyWork title='my work' id='work' />
-        <Contact title='Get in touch' id='contact' />
-        <Footer />*/}
     </div>
   )
 }

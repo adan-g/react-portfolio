@@ -8,8 +8,8 @@ import { Tooltip } from 'react-tooltip'
 
 const Skills = () => {
   return (
-    <section className=''>
-      <h1 className='text-[10rem] text-center text-black12 font-semibold my-24' style={{ '-webkit-text-stroke-width': '2px', '-webkit-text-stroke-color': '#93B1A6', 'text-shadow': '#93B1A6 1px 0 20px' }}>
+    <section id={'skills'}>
+      <h1 className='text-[9rem] text-center text-black12 font-semibold my-24' style={{ '-webkit-text-stroke-width': '2px', '-webkit-text-stroke-color': '#93B1A6', 'text-shadow': '#93B1A6 1px 0 20px' }}>
         SKILLS
       </h1>
 
