@@ -3,9 +3,10 @@ import { RiCloseLine, RiExpandUpDownFill, RiSubtractLine } from "react-icons/ri"
 import imgFace from '../img/imgAdan.jpg'
 import Typewriter from 'typewriter-effect';
 
+
 const About = () => {
   return (
-    <section id={'about'} className='h-[90vh] grid grid-cols-1 lg:grid-cols-8'>
+    <section id={'about'} className='lg:h-[90vh] grid grid-cols-1 lg:grid-cols-8'>
       <div className='lg:col-span-5 flex justify-center items-center'>
         <div
           className='bg-black12 text-slate-200 border-greenA6 border shadow-md shadow-greenA6 lg:w-4/5 lg:h-3/5 w-11/12 rounded-lg my-10' data-aos='zoom-in' data-aos-duration="1000">
