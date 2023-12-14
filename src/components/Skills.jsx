@@ -12,7 +12,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 const Skills = () => {
   return (
     <section id={'skills'}>
-      <h1 className='lg:text-[9rem] text-[7rem] text-center text-black12 font-semibold my-24' style={{ '-webkit-text-stroke-width': '2px', '-webkit-text-stroke-color': '#93B1A6', 'text-shadow': '#93B1A6 1px 0 20px' }}>
+      <h1 className='lg:text-[9rem] text-7xl text-center text-black12 font-semibold my-24' style={{ '-webkit-text-stroke-width': '2px', '-webkit-text-stroke-color': '#93B1A6', 'text-shadow': '#93B1A6 1px 0 20px' }}>
         SKILLS
       </h1>
 
